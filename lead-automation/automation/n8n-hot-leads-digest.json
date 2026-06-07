@@ -1,0 +1,71 @@
+{
+  "name": "Hot Leads Hourly Digest",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Every Hour",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8000/leads",
+        "options": {}
+      },
+      "id": "get-leads",
+      "name": "GET /leads",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Keep only Hot leads, then build one digest message.\nconst hot = items.filter(i => i.json.classification === 'Hot');\nif (hot.length === 0) { return []; }\nconst lines = hot.map(i => `• ${i.json.name} (${i.json.source}): ${i.json.message.slice(0, 60)}`);\nconst text = `🔥 ${hot.length} Hot lead(s):\\n` + lines.join('\\n');\nreturn [{ json: { text } }];"
+      },
+      "id": "build-digest",
+      "name": "Filter Hot + Build Digest",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hooks.slack.com/services/REPLACE/WITH/YOUR_WEBHOOK",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ text: $json.text }) }}",
+        "options": {}
+      },
+      "id": "post-digest",
+      "name": "Post to Slack",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Every Hour": {
+      "main": [[{ "node": "GET /leads", "type": "main", "index": 0 }]]
+    },
+    "GET /leads": {
+      "main": [[{ "node": "Filter Hot + Build Digest", "type": "main", "index": 0 }]]
+    },
+    "Filter Hot + Build Digest": {
+      "main": [[{ "node": "Post to Slack", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {},
+  "active": false
+}

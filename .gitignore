@@ -1,0 +1,17 @@
+# personal notes — not part of the submission
+WALKTHROUGH.md
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# runtime data (created on startup)
+backend/leads.json
+
+# node / next.js
+node_modules/
+.next/
+
+# env
+.env

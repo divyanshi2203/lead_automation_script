@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Aarav Mehta",
+    "email": "aarav.mehta+leads@gmail.com",
+    "phone": "+919812345678",
+    "source": "website_form",
+    "message": "Hi! Saw your post on LinkedIn \u2014 we need help automating our customer onboarding workflow. Can we hop on a call this week? Budget is around 50k/month for the right partner.",
+    "id": 1,
+    "classification": "Hot",
+    "suggested_reply": "Thanks for reaching out \u2014 this sounds like a great fit. When are you free for a quick call this week?",
+    "status": "New"
+  },
+  {
+    "name": "Priya Sharma",
+    "email": "priya.sh@startupinc.co",
+    "phone": "+918765432109",
+    "source": "whatsapp",
+    "message": "is your service free or paid? just exploring options for now",
+    "id": 2,
+    "classification": "Warm",
+    "suggested_reply": "Thanks for your message! Happy to share more details \u2014 could you tell me a bit about what you're looking for?",
+    "status": "Contacted"
+  },
+  {
+    "name": "Rohan Kapoor",
+    "email": "rkapoor@coldmail.in",
+    "phone": "+917654321098",
+    "source": "email",
+    "message": "To Whom It May Concern, I came across your business and would like to know more about your offerings. Please send me a brochure at your earliest convenience.",
+    "id": 3,
+    "classification": "Warm",
+    "suggested_reply": "Thanks for your message! Happy to share more details \u2014 could you tell me a bit about what you're looking for?",
+    "status": "New"
+  },
+  {
+    "name": "Neha Patel",
+    "email": "neha@growth.io",
+    "phone": "+916543210987",
+    "source": "website_form",
+    "message": "Hey team \u2014 I'm building a Shopify store and I need an automation that posts orders to a Slack channel and tags products by category using AI. Saw your work with similar clients. Can you take this on? Need it live by end of month.",
+    "id": 4,
+    "classification": "Hot",
+    "suggested_reply": "Thanks for reaching out \u2014 this sounds like a great fit. When are you free for a quick call this week?",
+    "status": "New"
+  },
+  {
+    "name": "Vikram Singh",
+    "email": "vsingh@gmail.com",
+    "phone": "+915432109876",
+    "source": "whatsapp",
+    "message": "hello",
+    "id": 5,
+    "classification": "Cold",
+    "suggested_reply": "Thanks for getting in touch. Let us know if there's anything specific we can help with.",
+    "status": "New"
+  },
+  {
+    "name": "Ananya Iyer",
+    "email": "ananya.iyer@bigcorp.com",
+    "phone": "+914321098765",
+    "source": "email",
+    "message": "Hi, I'm the Ops Manager at a 200-person company. We're evaluating vendors for a 6-month engagement to streamline our internal ticketing and AI-assisted triage. Could you share case studies and a rough pricing range? Targeting RFP closure by mid-June.",
+    "id": 6,
+    "classification": "Hot",
+    "suggested_reply": "Thanks for reaching out \u2014 this sounds like a great fit. When are you free for a quick call this week?",
+    "status": "New"
+  },
+  {
+    "name": "Karan Joshi",
+    "email": "karan@notasked.in",
+    "phone": "+913210987654",
+    "source": "website_form",
+    "message": "win iphone 15 click here www.shadydeal.in",
+    "id": 7,
+    "classification": "Cold",
+    "suggested_reply": "Thanks for getting in touch. Let us know if there's anything specific we can help with.",
+    "status": "New"
+  },
+  {
+    "name": "Riya Desai",
+    "email": "riya.desai+founder@gmail.com",
+    "phone": "+912109876543",
+    "source": "whatsapp",
+    "message": "hi, I run a small content studio. need help setting up a workflow that takes a YouTube video transcript and turns it into LinkedIn posts + Instagram carousels automatically. willing to pay one-time fee for setup. when can we talk?",
+    "id": 8,
+    "classification": "Hot",
+    "suggested_reply": "Thanks for reaching out \u2014 this sounds like a great fit. When are you free for a quick call this week?",
+    "status": "New"
+  },
+  {
+    "name": "Saurabh Reddy",
+    "email": "sreddy@quietcompany.co",
+    "phone": "+911098765432",
+    "source": "email",
+    "message": "unsubscribe",
+    "id": 9,
+    "classification": "Cold",
+    "suggested_reply": "Thanks for getting in touch. Let us know if there's anything specific we can help with.",
+    "status": "New"
+  },
+  {
+    "name": "Meera Nair",
+    "email": "meera@founderfriendly.com",
+    "phone": "+919876543210",
+    "source": "website_form",
+    "message": "Hey! Big fan of your content on automation. Just wanted to say hi and connect \u2014 no immediate project but happy to refer folks your way if anything comes up.",
+    "id": 10,
+    "classification": "Warm",
+    "suggested_reply": "Thanks for your message! Happy to share more details \u2014 could you tell me a bit about what you're looking for?",
+    "status": "New"
+  }
+]

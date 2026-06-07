@@ -1,0 +1,56 @@
+/* Plain CSS — no framework, kept small on purpose. */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 24px;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f5f5f5;
+}
+
+/* Color-coded classification badges */
+.badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.Hot {
+  background: #e23b3b;
+}
+.Warm {
+  background: #e3902b;
+}
+.Cold {
+  background: #6b7280;
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+select {
+  padding: 4px 8px;
+  margin-bottom: 16px;
+}
