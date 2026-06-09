@@ -67,7 +67,6 @@ add your Slack webhook URL, and activate.
 - **n8n** — free/open-source, exports the flow as JSON.
 
 ## Tradeoffs / what I'd improve with more time
-
 - JSON file is fine for 10 leads but not concurrent writes — I'd move to SQLite.
 - Classification prompt is basic; I'd add few-shot examples and confidence scores.
 - No pagination/search on the dashboard; fine at this scale.
